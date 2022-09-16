@@ -16,7 +16,7 @@ int[] CreateArray(int length, int startValue, int endValue)
 int CalcSumOnEvenIndex(int[] array)
 {
     int sum = 0;
-    for (int i = 0; i < array.Length; i = i + 2)
+    for (int i = 1; i < array.Length; i = i + 2)
     {
         sum = sum + array[i];
     }
@@ -44,4 +44,4 @@ var countSumOnEvenIndex = CalcSumOnEvenIndex(array);
 
 //Вывод результата
 Console.WriteLine($"Массив = {ShowArray(array)}");
-Console.WriteLine($"Сумма элементов, стоящих на нечётных позициях - {countSumOnEvenIndex}");
+Console.WriteLine($"Сумма элементов, стоящих на нечётных позициях = {countSumOnEvenIndex}");
